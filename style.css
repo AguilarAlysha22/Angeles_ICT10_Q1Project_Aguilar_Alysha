@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5eee5;
+    color: #4b3f45;
+}
+
+header {
+    background-color: #75658c;
+    padding: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2{
+    color: #fffaf5;
+}
+
+.nav-links a {
+    color: #fffaf5;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    color: #d8cce3;
+}
+
+.welcome {
+    text-align: center;
+    padding: 30px;
+}
+
+.welcome h1 {
+    color: #5f4d70;
+}
+
+.welcome p {
+    color: #6b625c;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cards .card {
+    width: 300px;
+}
+
+.card {
+    background-color: #fffaf4;
+    width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.card h2,
+.card h3 {
+    color: #6b587d;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, 
+select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #c8b9a8;
+    border-radius: 6px;
+    background-color: #fffdf9;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #75658c;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #625273;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #eee5d9;
+    border-radius: 6px;
+}
+
+.menu-item label {
+    margin: 0;
+}
+
+.menu-item .price {
+    color: #6b587d;
+    font-weight: bold;
+}
+
+.menu-item input {
+    width: 60px;
+}
+
+#result {
+margin-top: 15px;
+padding: 15px;
+background-color: #eee5d9;
+border-radius: 6px;
+line-height: 1.6;
+}
+
+.card a {
+color: #6b587d;
+text-decoration: none;
+font-weight: bold;
+}
+
+.card a:hover {
+color: #4f3f5e;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.2.4/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.2.4/core.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h2>A Latte Lacey</h2>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="sku.html">SKU Generator</a>
+                <a href="receipt.html">Receipt Generator</a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="welcome">
+        <h1>Receipt Generator</h1>
+        <p>Create a receipt for your A Latte Lacey Cafe order.</p>
+    </div>
+
+    <div class="card">
+
+        <label for="customer_name">Customer Name</label>
+        <input type="text" id="customer_name" placeholder="Enter customer name">
+
+        <h2>Menu</h2>
+
+        <div class="menu-item">
+            <label>Matcha Latte</label>
+            <span class="price">₱150</span>
+            <input type="number" id="item1" min="0" value="0">
+        </div>
+
+        <div class="menu-item">
+            <label>Spanish Latte</label>
+            <span class="price">₱145</span>
+            <input type="number" id="item2" min="0" value="0">
+        </div>
+
+        <div class="menu-item">
+            <label>Vanilla Latte</label>
+            <span class="price">₱135</span>
+            <input type="number" id="item3" min="0" value="0">
+        </div>
+
+        <div class="menu-item">
+            <label>Caramel Latte</label>
+            <span class="price">₱140</span>
+            <input type="number" id="item4" min="0" value="0">
+        </div>
+
+        <div class="menu-item">
+            <label>Blueberry Cheesecake</label>
+            <span class="price">₱160</span>
+            <input type="number" id="item5" min="0" value="0">
+        </div>
+
+        <div class="menu-item">
+            <label>Chocolate Croissant</label>
+            <span class="price">₱120</span>
+            <input type="number" id="item6" min="0" value="0">
+        </div>
+
+        <button py-click="create_order">CREATE ORDER</button>
+
+        <h2>Order Summary</h2>
+
+        <div id="result">
+            Your receipt will appear here.
+        </div>
+
+        <script type="py" src="./receipt.py"></script>
+
+    </div>
+</body>
+</html>

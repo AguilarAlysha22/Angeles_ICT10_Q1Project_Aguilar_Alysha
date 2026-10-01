@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKU Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.2.4/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.2.4/core.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h2>A Latte Lacey</h2>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="sku.html">SKU Generator</a>
+                <a href="receipt.html">Receipt Generator</a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="welcome">
+        <h1>SKU Generator</h1>
+        <p>Create a unique stock keeping unit for your A Latte Lacey products.</p>
+    </div>
+
+    <div class="card">
+
+        <label for="category">Product Category</label>
+        <select id="category">
+            <option value="COF">Coffee</option>
+            <option value="LAT">Latte</option>
+            <option value="PAS">Pastry</option>
+            <option value="STA">Stationery</option>
+        </select>
+
+        <label for="product_name">Product Name</label>
+        <input type="text" id="product_name" placeholder="e.g. Matcha Latte">
+
+        <label for="stock_quantity">Stock Quantity</label>
+        <input type="number" id="stock_quantity" placeholder="e.g. 10" min="1">
+
+        <button py-click="generate_sku">GENERATE SKU</button>
+
+        <h2>Generated SKU</h2>
+
+        <div id="result">
+            Enter the product details above to generate your SKU.
+        </div>
+
+        <script type="py" src="./sku.py"></script>
+
+    </div> 
+
+</body>
+</html>
